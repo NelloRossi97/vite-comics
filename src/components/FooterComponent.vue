@@ -1,6 +1,10 @@
 <template>
     <footer>
-        footer
+        <div class="links">
+            <div class="container">
+                links
+            </div>
+        </div>
         <ContactsComponent/>
     </footer>
 </template>

@@ -1,6 +1,8 @@
 <template>
     <section>
-        call-to-action
+        <div class="container">
+            call-to-action
+        </div>
     </section>
 </template>
 

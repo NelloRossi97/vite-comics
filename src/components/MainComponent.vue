@@ -1,6 +1,8 @@
 <template>
     <main>
-        main
+        <div class="container">
+            container
+        </div>
         <CallToActionComponent/>
     </main>
 </template>

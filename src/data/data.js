@@ -50,3 +50,5 @@ const navLinks = [
         status: false
     },
 ];
+
+export {navLinks}

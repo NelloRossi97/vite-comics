@@ -1,0 +1,27 @@
+@use './styles/colors.scss' as *;
+
+header{
+    height: 100px;
+    nav{
+        height: 100%;
+        img{
+            height: 70%;
+        }
+    }   
+}
+main{
+    background-color: $bg-main;
+    color: white;
+}
+section{
+    background-color: $blue-secondary;
+}
+footer{
+    color: white;
+    .links{
+       background-image: url(../assets/images/footer-bg.jpg); 
+    }
+    .contacts{
+        background-color: $bg-contacts;
+    }
+}
