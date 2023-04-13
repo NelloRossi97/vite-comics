@@ -3,7 +3,7 @@
         <nav class="d-flex justify-content-between align-items-center">
             <img src="/images/dc-logo.png" alt="DC Logo">
             <ul class="d-flex align-items-center list-unstyled m-0 h-100">
-                <li class="me-3 h-100 d-flex align-items-center" v-for="(link, index) in navbar" :class="{'active':link.status}" :key="index">
+                <li class="me-3 h-100 d-flex align-items-center" v-for="(link, index) in navbar" :class="{'active':link.status}" :key="index" @click="link.status = !link.status">
                     <a :href="link.url" class="nav-link fw-bold text-uppercase">{{ link.text }}</a>
                 </li>
             </ul>
@@ -20,7 +20,7 @@ import{navLinks} from '../data/data'
             return{
                 navbar: navLinks
             }
-        }
+        },
     }
 </script>
 
