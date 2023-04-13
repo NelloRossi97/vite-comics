@@ -2,8 +2,8 @@
     <header class="container">
         <nav class="d-flex justify-content-between align-items-center">
             <img src="../assets/images/dc-logo.png" alt="DC Logo">
-            <ul class="d-flex list-unstyled">
-                <li class="me-3" v-for="(link, index) in navbar" :key="index">
+            <ul class="d-flex align-items-center list-unstyled m-0 h-100">
+                <li class="me-3 h-100 d-flex align-items-center" v-for="(link, index) in navbar" :class="{'active':link.status}" :key="index">
                     <a :href="link.url" class="nav-link fw-bold text-uppercase">{{ link.text }}</a>
                 </li>
             </ul>
@@ -25,5 +25,12 @@ import{navLinks} from '../data/data'
 </script>
 
 <style lang="scss" scoped>
-
+@use '../assets/styles/colors.scss' as *;
+.active{
+    border-bottom: 3px solid $blue-secondary;
+    color: $blue-secondary;
+}
+ul{
+    color: $bg-contacts;
+}
 </style>
