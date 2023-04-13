@@ -6,6 +6,7 @@ import '@fortawesome/fontawesome-free/scss/solid.scss';
 
 import 'bootstrap/scss/bootstrap.scss';
 
-import './assets/general.scss'
+import './assets/general.scss';
+import './assets/styles/colors.scss';
 
 createApp(App).mount('#app')
