@@ -18,9 +18,8 @@ section{
 }
 footer{
     color: white;
-    .links{
-       background-image: url(/images/footer-bg.jpg); 
-    }
+    background-image: url(/images/footer-bg.jpg); 
+    background-size: cover;
     .contacts{
         background-color: $bg-contacts;
     }
