@@ -1,6 +1,6 @@
 <template>
-    <section>
-        <div class="container py-3 d-flex justify-content-between">
+    <section class="py-3">
+        <div class="container px-5 d-flex justify-content-between">
             <div class="d-flex align-items-center prova" v-for="item in contentCall">
                 <img class="me-4 h-50" :src="'/images/'+item.image" :alt="item.text">
                 <span class="text-uppercase">{{ item.text }}</span>
