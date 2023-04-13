@@ -1,7 +1,7 @@
 <template>
     <main>
-        <div class="container">
-            container
+        <div class="container py-5 fw-bold fs-3">
+            -> Content goes here
         </div>
         <CallToActionComponent/>
     </main>
