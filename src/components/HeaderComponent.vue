@@ -3,8 +3,8 @@
         <nav class="d-flex justify-content-between align-items-center">
             <img src="/images/dc-logo.png" alt="DC Logo">
             <ul class="d-flex align-items-center list-unstyled m-0 h-100 d-none d-lg-flex">
-                <li class="me-3 h-100 d-flex align-items-center" v-for="(link, index) in navbar" :class="{'active':link.status}" :key="index" @click="link.status = !link.status">
-                    <a :href="link.url" class="nav-link fw-bold text-uppercase">{{ link.text }}</a>
+                <li class="me-3 h-100 d-flex align-items-center" v-for="(link, index) in navbar" :class="index===currentIndex && 'active'" :key="index">
+                    <a :href="link.url" class="nav-link fw-bold text-uppercase" @click="activeLink(index)">{{ link.text }}</a>
                 </li>
             </ul>
             <div class="dropdown d-lg-none">
@@ -27,9 +27,15 @@ import{navLinks} from '../data/data';
         data(){
             return{
                 navbar: navLinks,
-                show: false
+                show: false,
+                currentIndex: 0
             }
         },
+        methods:{
+            activeLink(index){
+                this.currentIndex = index;
+            }
+        }
     }
 </script>
 
