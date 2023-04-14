@@ -29,7 +29,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="logo-container position-absolute">
+            <div class="logo-container position-absolute d-none d-xl-block">
                 <img src="/images/dc-logo-bg.png" alt="Logo">
             </div> 
         </div>
