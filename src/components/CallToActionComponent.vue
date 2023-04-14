@@ -1,8 +1,8 @@
 <template>
     <section class="py-3">
-        <div class="container px-5 d-flex justify-content-between">
+        <div class="container px-5 d-flex flex-column flex-xl-row justify-content-between align-items-center">
             <div class="d-flex align-items-center prova" v-for="item in contentCall">
-                <img class="me-4 h-50" :src="'/images/'+item.image" :alt="item.text">
+                <img class="me-4 mb-4 h-50" :src="'/images/'+item.image" :alt="item.text">
                 <span class="text-uppercase">{{ item.text }}</span>
             </div>
         </div>
