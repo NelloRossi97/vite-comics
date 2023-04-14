@@ -8,12 +8,11 @@
                 </li>
             </ul>
         </nav>
-        
     </header>
 </template>
 
 <script>
-import{navLinks} from '../data/data'
+import{navLinks} from '../data/data';
     export default {
         name: 'HeaderComponent',
         data(){
