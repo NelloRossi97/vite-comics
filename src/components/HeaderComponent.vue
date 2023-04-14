@@ -67,7 +67,7 @@ nav{
     }
     li:hover{
         border: none;
-        color: $links-color;
+        color: white;
     }
 }
 
