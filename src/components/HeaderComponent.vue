@@ -10,8 +10,8 @@
             <div class="dropdown d-lg-none">
                 <button class="btn" @click="show = !show"><i class="fa-solid fa-bars fs-3"></i></button>
                 <ul class="dropdown-menu" :class="show && 'show'">
-                    <li v-for="link in navbar" class="px-3 mb-2">
-                        <a :href="link.url" class="nav-link fw-bold text-uppercase">{{ link.text }}</a>
+                    <li v-for="(link, index) in navbar" :class="index===currentIndex && 'active-dropdown'" class="px-3 mb-2">
+                        <a :href="link.url" class="nav-link fw-bold text-uppercase" @click="activeLink(index)">{{ link.text }}</a>
                     </li>
                 </ul>
             </div>
@@ -48,6 +48,10 @@ import{navLinks} from '../data/data';
     border-bottom: 3px solid $blue-secondary;
     color: $blue-secondary;
 }
+.active-dropdown{
+    background-color: $blue-secondary;
+    color: white;
+}
 nav{
    ul{
     color: $bg-contacts;
@@ -60,6 +64,10 @@ nav{
 .dropdown{
     ul{
         right:0px;
+    }
+    li:hover{
+        border: none;
+        color: $links-color;
     }
 }
 
