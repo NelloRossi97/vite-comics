@@ -1,3 +1,6 @@
+import data from '../../dc-comics.json' assert { type: 'JSON' };
+
+const comicsData = data;
 const navLinks = [
     {
         text: 'Characters',
@@ -51,4 +54,4 @@ const navLinks = [
     },
 ];
 
-export {navLinks}
+export {navLinks, comicsData}
