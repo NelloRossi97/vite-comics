@@ -7,7 +7,7 @@
                     <a :href="link.url" class="nav-link fw-bold text-uppercase">{{ link.text }}</a>
                 </li>
             </ul>
-            <div class="dropstart d-lg-none">
+            <div class="dropdown d-lg-none">
                 <button class="btn" @click="show = !show"><i class="fa-solid fa-bars fs-3"></i></button>
                 <ul class="dropdown-menu" :class="show && 'show'">
                     <li v-for="link in navbar" class="px-3 mb-2">
@@ -50,6 +50,11 @@ nav{
         color: $blue-secondary;
     }
 } 
+}
+.dropdown{
+    ul{
+        right:0px;
+    }
 }
 
 </style>
